@@ -8,9 +8,31 @@
 </head>
 <body>
 <div id="app">
-    ds
-    <example-component/>
+    <div>
+        <div>
+            <v-container>
+                <v-row>
+                    <v-col>
+                        q2er
+                    </v-col>
+
+                    <v-col>
+                        q2erwqe
+                    </v-col>
+                </v-row>
+            </v-container>
+            <example-component/>
+        </div>
+        <router-view/>
+    </div>
 </div>
 <script src="./js/app.js"></script>
 </body>
 </html>
+<script>
+    import ExampleComponent from "../js/components/ExampleComponent";
+
+    export default {
+        components: {ExampleComponent}
+    }
+</script>
