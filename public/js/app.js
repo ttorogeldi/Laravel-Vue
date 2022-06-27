@@ -5448,7 +5448,12 @@ Vue.component('test', (__webpack_require__(/*! ./components/Test.vue */ "./resou
  */
 
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  data: function data() {
+    return {
+      toha: 123
+    };
+  }
 });
 
 /***/ }),
@@ -5482,8 +5487,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 // window.Pusher = require('pusher-js');
 // window.Echo = new Echo({
 //     broadcaster: 'pusher',
-//     key: process.env.MIX_PUSHER_APP_KEY,
-//     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
+//     key: process..env.MIX_PUSHER_APP_KEY,
+//     cluster: process..env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
 
@@ -28112,7 +28117,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("div", { staticClass: "card-body" }, [
               _vm._v(
-                "\n                    I'm an example component.\n                "
+                "\n                    I'm an example component.1\n                "
               ),
             ]),
           ]),
